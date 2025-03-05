@@ -16,20 +16,6 @@ Explore-Nusantara/  📂
 - **Backend:** Node.js + Hapi.js + PostgreSQL
 - **Machine Learning:** Python + Scikit-Learn
 
-## 🛑 Daftar File yang Tidak Akan Di-Push
-
-| Jenis         | File/Folder yang Diabaikan          | Keterangan                          |
-|--------------|----------------------------------|--------------------------------------|
-| **Node.js**  | `node_modules/`                 | Folder library dari npm/yarn        |
-| **Node.js**  | `.env`                           | File yang berisi API key/password   |
-| **Python**   | `venv/`, `env/`                 | Virtual environment                 |
-| **Python**   | `__pycache__/`, `*.pyc`, `*.pyo` | Cache Python                        |
-| **Jupyter**  | `*.ipynb_checkpoints`           | Auto-save dari Jupyter Notebook     |
-| **Sistem**   | `.DS_Store`, `.idea/`, `.vscode/`, `*.log` | File sampah dari editor/sistem     |
-
-💡 **Kenapa pakai `.gitignore`?**  
-Supaya file **yang tidak perlu** tidak memenuhi repository GitHub, jadi proyek lebih rapi dan ringan. 🚀
-
 ## 👥Tim Pengembang
 - Backend: [@Vania](https://github.com/vamatsa-vmt) & [@Chandra](https://github.com/XchandraX)
 - Fronted: Full FEBE
