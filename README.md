@@ -2,12 +2,6 @@
 
 Explore Nusantara adalah platform rekomendasi tempat wisata di Indonesia menggunakan Machine Learning.
 
-## 👥Tim Pengembang
-- Backend: [@Vania](https://github.com/vamatsa-vmt) & [@Chandra](https://github.com/XchandraX)
-- Fronted: Full FEBE
-- Machine Learning: [@Khalid](https://github.com/Kalidun) & [@Aprian](https://github.com/066pine)
-- UI/UX Designer: [@Nisa](https://github.com/066pine) @ [@Kanaya](https://github.com/nayaaasss)
-
 ## 📁 Struktur Proyek
 
 Explore-Nusantara/  📂 
@@ -22,14 +16,6 @@ Explore-Nusantara/  📂
 - **Backend:** Node.js + Hapi.js + PostgreSQL
 - **Machine Learning:** Python + Scikit-Learn
 
-## 📜 Cara Menjalankan Proyek
-1. **Clone repo ini:**
-   ```sh
-   git clone https://github.com/username/Explore-Nusantara.git
-   ```
-   ```sh
-   cd Explore-Nusantara
-
 ## 🛑 Daftar File yang Tidak Akan Di-Push
 
 | Jenis         | File/Folder yang Diabaikan          | Keterangan                          |
@@ -43,3 +29,9 @@ Explore-Nusantara/  📂
 
 💡 **Kenapa pakai `.gitignore`?**  
 Supaya file **yang tidak perlu** tidak memenuhi repository GitHub, jadi proyek lebih rapi dan ringan. 🚀
+
+## 👥Tim Pengembang
+- Backend: [@Vania](https://github.com/vamatsa-vmt) & [@Chandra](https://github.com/XchandraX)
+- Fronted: Full FEBE
+- Machine Learning: [@Khalid](https://github.com/Kalidun) & [@Aprian](https://github.com/066pine)
+- UI/UX Designer: [@Nisa](https://github.com/066pine) @ [@Kanaya](https://github.com/nayaaasss)
