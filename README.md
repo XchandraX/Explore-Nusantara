@@ -4,8 +4,8 @@ Explore Nusantara adalah platform rekomendasi tempat wisata di Indonesia menggun
 
 ## 🚀 Teknologi yang Digunakan
 - **Frontend:** React + Tailwind CSS
-- **Backend:** Node.js + Hapi.js + PostgreSQL
-- **Machine Learning:** Python + Scikit-Learn
+- **Backend:** Node.js + Hapi.js
+- **Machine Learning:** Python 
 
 ## 👥Tim Pengembang
 - Backend: [@Vania](https://github.com/vamatsa-vmt) & [@Chandra](https://github.com/XchandraX)
