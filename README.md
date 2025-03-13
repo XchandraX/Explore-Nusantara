@@ -25,5 +25,5 @@ Aplikasi ini membantu wisatawan menemukan destinasi terbaik berdasarkan data & p
 
 ### **1️⃣ Clone Repository**
 ```sh
-git clone https://github.com/yourteam/explore-nusantara.git
+git clone https://github.com/XchandraX/explore-nusantara.git
 cd explore-nusantara
