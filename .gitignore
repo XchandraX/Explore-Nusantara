@@ -1,20 +1,162 @@
-# Backend & Frontend (Node.js)
-node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-.env
+# === LOG FILES ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# Machine Learning (Python)
+# === RUNTIME DATA ===
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# === NODE.JS & FRONTEND ===
+node_modules/
+bower_components/
+jspm_packages/
+web_modules/
+dist/
+.next/
+.nuxt/
+.out/
+.serverless/
+.docusaurus/
+
+# TypeScript Cache
+*.tsbuildinfo
+
+# Webpack, Parcel, Vite, Snowpack
+.cache/
+.parcel-cache/
+**/.vitepress/cache
+**/.vitepress/dist
+
+# Yarn & npm
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Linter & Formatter
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_*/
+
+# REPL history
+.node_repl_history
+
+# Optional npm cache
+.npm/
+
+# === DATABASE ===
+*.sql
+*.db
+/database/migrations/
+
+# === PYTHON (Machine Learning) ===
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.env
+.venv/
 venv/
 env/
-*.ipynb_checkpoints
+ENV/
+env.bak/
+venv.bak/
 
-# Editor & Sistem
-.DS_Store
-.idea/
-.vscode/
+# Distribution & Build
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Pip, Pipenv, Poetry
+pip-log.txt
+pip-delete-this-directory.txt
+Pipfile.lock
+poetry.lock
+pdm.lock
+
+# Unit Test & Coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Type Checkers & Linters
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# === FRAMEWORK-SPECIFIC FILES ===
+# Django
 *.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx Docs
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+.vscode-test/
+
+# JetBrains (PyCharm, WebStorm, etc.)
+*.iml
+*.ipr
+*.iws
