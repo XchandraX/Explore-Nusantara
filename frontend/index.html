@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Explore Nusantara</title>
+    <link href="./src/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello Dunia</h1>
+    <nav class="bg-neutral-50 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="./src/asset/explore indonesia logo rev.png" alt="Explore Nusantara Logo" class="w-12 mr-2">
+                <span class="text-[#AC654A] text-2xl font-semibold">Explore Nusantara</span>
+            </a>
+
+            <div class="hidden md:flex space-x-6">
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-black hover:text-[#4F834F]">Beranda</a></li>
+                    <li><a href="#" class="text-black hover:text-[#4F834F]">Destinasi</a></li>
+                    <li><a href="#" class="text-black hover:text-[#4F834F]">Budaya</a></li>
+                    <li><a href="#" class="text-black hover:text-[#4F834F]">Testimoni</a></li>
+                </ul>
+            </div>
+
+            <div class="relative">
+                <input type="text" placeholder="Cari..." class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500">
+                    🔍
+                </button>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
