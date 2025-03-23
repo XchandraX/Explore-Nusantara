@@ -55,7 +55,6 @@ dist/
 # === DATABASE ===
 *.sql
 *.db
-/database/migrations/
 
 # === PYTHON (Machine Learning) ===
 __pycache__/
@@ -63,7 +62,6 @@ __pycache__/
 *$py.class
 
 # Virtual Environments
-.env
 .venv/
 venv/
 env/
