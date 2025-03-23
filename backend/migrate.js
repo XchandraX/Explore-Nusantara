@@ -13,7 +13,7 @@ console.log(`🔍 Membaca file: ${schemaPath}`);
       if (query.trim()) {
         try {
           console.log(`🔹 Menjalankan query: ${query.trim().split('\n')[0]}`);
-          await db.query(query); // PERBAIKAN: Tidak pakai callback
+          await db.query(query); 
           console.log(`✅ Query sukses`);
         } catch (err) {
           console.error(`❌ Error saat menjalankan query:\n${query}\n`, err.message);
