@@ -52,22 +52,10 @@ dist/
 # Optional npm cache
 .npm/
 
-# === DATABASE ===
-*.sql
-*.db
-
 # === PYTHON (Machine Learning) ===
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Virtual Environments
-.venv/
-venv/
-env/
-ENV/
-env.bak/
-venv.bak/
 
 # Distribution & Build
 .Python
