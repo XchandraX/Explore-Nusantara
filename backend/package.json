@@ -3,14 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/config/server.js"
+    "start": "nodemon ./src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@hapi/hapi": "^21.4.0"
+    "@hapi/hapi": "^21.4.0",
+    "axios": "^1.8.3",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.7",
+    "hapi": "^18.1.0",
+    "hapi-auth-jwt2": "^11.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.13.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"

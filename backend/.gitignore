@@ -1,0 +1,30 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Environment & Config
+.env
+config/*.json
+config/*.js
+
+# Database & Logs
+database.sqlite
+*.db
+*.sql
+*.log
+
+# Compiled files
+dist/
+build/
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Uploads & Temp Files
+uploads/
+tmp/
