@@ -1,20 +1,17 @@
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise'); 
 require('dotenv').config();
 
-const db = mysql.createConnection({
+const pool = mysql.createPool({
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || '',
   database: process.env.DB_NAME || 'pariwisata',
   port: process.env.DB_PORT || 3306,
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0
 });
 
-db.connect((err) => {
-  if (err) {
-    console.error('❌ Gagal terhubung ke database:', err);
-    return;
-  }
-  console.log('✅ Terhubung ke MySQL Database:', process.env.DB_NAME);
-});
+console.log('✅ Pool koneksi MySQL siap digunakan.');
 
-module.exports = db;
+module.exports = pool;
