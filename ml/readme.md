@@ -10,8 +10,7 @@ Dataset Soure: https://www.kaggle.com/datasets/farazbeniqnomf/indonesiaecotouris
 ## Cara Penggunaan
 
 1.  Pastikan Anda memiliki library yang diperlukan, seperti Pandas, Scikit-learn, Sastrawi, dan lainnya. Install dengan `pip install -r requirements.txt`.
-2.  Jalankan notebook `rekomendasi_tempat_wisata.ipynb` di Google Colab.
-3.  Gunakan fungsi `infer_place` untuk mendapatkan rekomendasi berdasarkan nama tempat.
+2.  Jalankan notebook `Recommendation.ipynb` di Google Colab.
 
 ## Dataset
 
