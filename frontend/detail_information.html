@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./dist/output.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FAF5F2]">
+    <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-3 shadow-md bg-[#FAF5F2]">
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+            <img src="./src/asset/explore-nusantara-logo.png" alt="Explore Nusantara Logo" class="w-12 mr-2">
+            <span class="text-[#AC654A] text-xl font-semibold">Explore Nusantara</span>
+        </a>
+    
+        <!-- Navigasi di Tengah -->
+        <ul class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex space-x-16">
+            <li><a href="#" class="text-black hover:text-[#4F834F]">Beranda</a></li>
+            <li><a href="#" class="text-black hover:text-[#4F834F]">Destinasi</a></li>
+            <li><a href="#" class="text-black hover:text-[#4F834F]">Budaya</a></li>
+        </ul>
+    
+        <!-- Search, Bahasa, dan Tombol Masuk -->
+        <div class="flex items-center space-x-4">
+            <!-- Search Bar -->
+            <div class="relative hidden md:block">
+                <input type="text" placeholder="Cari..." class="px-4 py-2 rounded-full border border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500">
+                    <img src="./src/asset/icon/search-icon.png" alt="search-icon" class="h-6">
+                </button>
+            </div>
+    
+            <!-- Opsi Bahasa -->
+            <select class="bg-transparent text-[#222222] font-normal focus:outline-none">
+                <option value="id">ID</option>
+                <option value="en">EN</option>
+            </select>
+    
+            <!-- Tombol Masuk -->
+            <a href="#" class="block text-center bg-[#4F834F] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#304b30]">
+                Masuk
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
