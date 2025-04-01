@@ -3,6 +3,8 @@ const jwt = require("jsonwebtoken");
 const faker = require("@faker-js/faker").faker;
 const axios = require("axios");
 const pool = require("./db");
+const { spawn } = require("child_process");
+const path = require("path");
 
 const JWT_SECRET = "supersecretkey";
 
@@ -20,6 +22,8 @@ const getUsers = async (_, h) => {
       .code(500);
   }
 };
+
+// -------------------------------------------------------------------------------- //
 
 const registerUser = async (req, h) => {
   try {
@@ -59,6 +63,8 @@ const registerUser = async (req, h) => {
   }
 };
 
+// -------------------------------------------------------------------------------- //
+
 const loginUser = async (req, h) => {
   try {
     const { email, password } = req.payload;
@@ -93,8 +99,81 @@ const loginUser = async (req, h) => {
   }
 };
 
+// -------------------------------------------------------------------------------- //
+
+const runPythonScript = (scriptPath, args = []) => {
+  return new Promise((resolve, reject) => {
+    const process = spawn("python", [scriptPath, ...args]);
+
+    let result = "";
+    process.stdout.on("data", (data) => {
+      result += data.toString();
+    });
+
+    process.stderr.on("data", (data) => {
+      console.error(`Python Error: ${data.toString()}`);
+    });
+
+    process.on("close", (code) => {
+      if (code === 0) {
+        resolve(JSON.parse(result));
+      } else {
+        reject(new Error("Python script failed"));
+      }
+    });
+  });
+};
+
+// -------------------------------------------------------------------------------- //
+
+const getAllPlaces = async (req, h) => {
+  try {
+    const scriptPath = path.join(__dirname, "../../ml/RestApi/get_places.py");
+    const places = await runPythonScript(scriptPath);
+    return h.response({ status: "success", data: places }).code(200);
+  } catch (error) {
+    return h.response({ status: "error", message: error.message }).code(500);
+  }
+};
+
+// -------------------------------------------------------------------------------- //
+
+const getPlaceById = async (req, h) => {
+  try {
+    const { id } = req.params;
+    const scriptPath = path.join(__dirname,"../../ml/RestApi/get_place_by_id.py");
+    const place = await runPythonScript(scriptPath, [id]);
+
+    if (!place) {
+      return h.response({ status: "fail", message: "Place not found" }).code(404);
+    }
+
+    return h.response({ status: "success", data: place }).code(200);
+  } catch (error) {
+    return h.response({ status: "error", message: error.message }).code(500);
+  }
+};
+
+// -------------------------------------------------------------------------------- //
+
+const getRecommendedPlaces = async (req, h) => {
+  try {
+    const { place_id } = req.params;
+    const scriptPath = path.join(__dirname, "../../ml/RestApi/recommendation.py");
+    const recommendations = await runPythonScript(scriptPath, [place_id]);
+
+    return h.response({ status: "success", data: recommendations }).code(200);
+  } catch (error) {
+    return h.response({ status: "error", message: error.message }).code(500);
+  }
+};
+
+
 module.exports = {
   getUsers,
   registerUser,
   loginUser,
+  getAllPlaces,
+  getPlaceById,
+  getRecommendedPlaces,
 };
