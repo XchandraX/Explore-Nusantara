@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk ke Explore Nusantara</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="/frontend/src/components/index.js" defer></script>
+</head>
+<body class="font-[Plus_Jakarta_Sans] m-0 p-0">
+    <div class="h-screen flex flex-col-reverse md:flex-row m-0 p-0">
+        <!-- Bagian Kiri (Form Box Login) -->
+        <div class="w-full md:w-1/2 flex flex-col justify-center items-center h-screen md:h-auto">
+            <div class="bg-white p-8 w-full h-full mt-8 md:m-24 md:w-96 justify-center items-center">
+                <h2 class="mb-8 md:mb-20 text-2xl md:text-4xl font-semibold text-center text-[#AC654A]">Masuk</h2>
+    
+                <form id="login-form">
+                    <label class="block text-sm md:text-base mb-2 text-gray-700">Nama Pengguna</label>
+                    <input type="text" id="username" class="w-full mb-4 px-2 py-1 md:px-4 md:py-2 border bg-[#FBFBFB] rounded-lg focus:ring focus:ring-[#A9CDA8]" placeholder="" required>
+    
+                    <label class="block text-sm md:text-base mb-2 text-gray-700">Kata Sandi</label>
+                    <input type="password" id="password" class="w-full px-2 py-1 md:px-4 md:py-2 border bg-[#FBFBFB] rounded-lg focus:ring focus:ring-[#A9CDA8]" placeholder="" required>
+                    
+                    <div class="flex justify-end mt-2">
+                        <a href="#" class="text-sm md:text-base text-gray-500 hover:underline">Lupa Sandi?</a>
+                    </div>
+
+                    <button type="submit" class="bg-[#4F834F] text-white text-sm md:text-base font-semibold rounded-lg py-2 w-full mt-12 hover:bg-[#385D38]">Masuk</button>
+                </form>
+                
+                <p class="text-center text-sm md:text-base text-gray-600 mt-4">Belum memiliki akun? 
+                    <a href="signup-page.html" class="text-[#4F834F] text-sm md:text-base hover:underline">Daftar</a>
+                  </p>
+            </div>
+        </div>
+
+         <!-- Bagian Kanan (Gambar) -->
+        <div class="w-full md:w-1/2 relative overflow-hidden">
+            <img src="/frontend/src/asset/img/scenery-boat-with-flag-indonesia.png" alt="Pemandangan sebuah perahu dengan bendera Indonesia" class="w-full h-64 md:h-full object-cover rounded-b-3xl md:rounded-none">
+
+            <!-- Teks Kiri Atas -->
+            <div class="absolute top-6 md:top-10 left-6 md:left-10">
+                <h2 class="text-xl md:text-4xl font-semibold text-white ">Selamat Datang Kembali di Eksplor Nusantara!</h2>
+            </div>
+
+            <!-- Logo Kiri Bawah -->
+            <div class="absolute bottom-6 md:bottom-10 left-6 md:left-10">
+                <div class="flex justify-center items-center gap-2 md:gap-4">
+                    <img src="/frontend/src/asset/img/logo-explore-nusantara-putih.png" alt="logo-explore-nusantara-putih" class="h-6 md:h-8">
+                    <h4 class="font-semibold text-white text-sm md:text-xl">Explore Nusantara</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

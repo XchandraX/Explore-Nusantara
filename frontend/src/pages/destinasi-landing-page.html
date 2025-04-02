@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Budaya</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="/frontend/src/components/index.js" defer></script>
+</head>
+
+<body class="bg-[#FAF5F2] font-[Plus_Jakarta_Sans]">
+    
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="mt-16 px-16">
+        <div class="relative w-full h-[900px] overflow-hidden rounded-xl">
+            <img src="/frontend/src/asset/img/mother-and-children-playing-water.png" alt="Hero" class="w-full h-full object-cover rounded-3xl">
+            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-white p-8 rounded-3xl">
+                <h1 class="text-5xl mb-8 font-semibold drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">Temukan Keindahan Nusantara <br> yang Menanti Anda!</h1>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Konten Destinasi -->
+    <section class="px-16 mt-40 mb-40">
+        <!-- Title Destinasi -->
+        <h2 class="font-semibold text-3xl mb-8">
+            <span class="text-[#AC654A]">Destinasi</span>
+            <span class="text-black">untuk Anda</span>
+        </h2>
+
+        <!-- Nanti data akan difilter menggunakan berdasarkan data kategori yang sudah tersedia di dataset -->
+
+        <!-- Opsi Jenis Dentinasi -->
+         <div class="flex gap-3 mb-5">
+            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="all">Semua</button>
+            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="budaya">Budaya</button>
+            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="taman-nasional">Taman Nasional</button>
+            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="desa-wisata">Desa Wisata</button>
+            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="cagar-alam">Cagar Alam</button>
+            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="taman-hiburan">Taman Hiburan</button>
+            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="bahari">Bahari</button>
+            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="sejarah">Sejarah</button>
+         </div>
+
+        <!-- Card Budaya & Tradisi -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            <!--Card 1-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 2-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 3-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 4-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 5-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 6-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 7-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 8-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 9-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 10-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 11-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!--Card 12-->
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
+                <div class="p-6 mb-4">
+                    <h3 class="text-2xl font-semibold">Tanah Lot</h3>
+                    <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <p class="text-gray-600 text-sm mt-2 mb-6">
+                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
+                    </p>
+
+                    <a href="#" class="bg-[#4F834F] text-white text-center py-2 px-3 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Button untuk beralih ke data selanjutnya-->
+        <div class="text-center mt-16 flex justify-center">
+            <a href="#" class="px-5 py-1 border-2 border-solid border-[#4F834F] rounded-lg text-[#4F834F] font-semibold hover:bg-[#4F834F] hover:text-white transition">
+                Lihat lagi
+            </a>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+</body>
+</html>
