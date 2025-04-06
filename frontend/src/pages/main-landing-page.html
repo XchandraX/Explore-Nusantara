@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="/frontend/src/components/index.js" defer></script>
+    <script type="module" src="/frontend/src/script/index.js" defer></script>
 </head>
 
 <body class="bg-[#FAF5F2] font-[Plus_Jakarta_Sans]">
-
+    <!-- Navbar -->
     <custom-navbar></custom-navbar>
     
     <section id="hero" class="md:px-16 my-12 md:my-20">
@@ -50,10 +50,10 @@
         </h2>
 
         <!-- Detinasi Card -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div id="container-destinasi-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <!-- Card 1 -->
-            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
                 <div class="p-6 mb-4">
                     <h3 class="text-2xl font-semibold">Tanah Lot</h3>
@@ -76,7 +76,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
                 <div class="p-6 mb-4">
                     <h3 class="text-2xl font-semibold">Tanah Lot</h3>
@@ -99,7 +99,7 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
                 <div class="p-6 mb-4">
                     <h3 class="text-2xl font-semibold">Tanah Lot</h3>
@@ -122,7 +122,7 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
                 <div class="p-6 mb-4">
                     <h3 class="text-2xl font-semibold">Tanah Lot</h3>
@@ -145,7 +145,7 @@
             </div>
 
             <!-- Card 5 -->
-            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
                 <div class="p-6 mb-4">
                     <h3 class="text-2xl font-semibold">Tanah Lot</h3>
@@ -169,7 +169,7 @@
             
 
              <!-- Card 6 -->
-            <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+            <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
                 <div class="p-6 mb-4">
                     <h3 class="text-2xl font-semibold">Tanah Lot</h3>
@@ -200,17 +200,18 @@
         </div>
     </section>
 
-
+    <!-- Indonesia Map -->
     <section id="indonesia-map" class="mx-16 my-20">
         <div class="relative w-full max-w-screen-lg mx-auto">
             <img src="/frontend/src/asset/img/indonesia-map.png" alt="Peta Indonesia" class="w-full">
-            <p class="absolute w-4/5 max-w-4xl text-4xl text-[#4F834F] text-center font-semibold bottom-32 left-1/2 transform -translate-x-1/2">
+            <p class="absolute w-4/5 md:max-w-4xl text-2xl md:text-4xl text-[#4F834F] text-center font-semibold bottom-32 left-1/2 transform -translate-x-1/2">
                 “Tahukah kamu? Indonesia memiliki lebih dari 17.000 pulau dengan ribuan budaya unik dan destinasi menakjubkan yang siap dieksplorasi!”
             </p>
         </div>
     </section>
 
- <section id="info-budaya" class="mx-16 my-40">
+    <!-- Informasi Budaya -->
+    <section id="info-budaya" class="mx-16 my-40">
     <h2 class="font-semibold text-3xl mb-8">
         <span class="text-[#AC654A]">Informasi</span>
         <span class="text-black">Budaya</span>
@@ -218,7 +219,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
         <!-- Kartu Besar -->
-        <div class="md:col-span-2 bg-white rounded-2xl shadow-lg overflow-hidden max-w-[85%]"> 
+        <div class="md:col-span-2 bg-white rounded-2xl shadow-lg overflow-hidden max-w-[85%] transform transition duration-300 hover:scale-105 hover:shadow-xl"> 
             <div class="relative">
                 <img src="/frontend/src/asset/img/budaya-kalimantan.png" alt="Budaya Kalimantan" class="w-full h-96 object-cover rounded-t-2xl">
                 <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-5 py-2 text-xs rounded-tr-lg rounded-bl-lg">
@@ -243,9 +244,9 @@
         </div>
     
         <!-- Kartu Kecil -->
-        <div class="grid grid-cols-1 gap-3 w-[100%]">
+        <div class="grid grid-cols-1 gap-3 w-[100%] ">
             <!-- Kartu Kecil 1 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex h-40 w-full">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex h-40 w-full transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <div class="relative w-[45%] h-40">
                     <img src="/frontend/src/asset/img/budaya-kalimantan.png" alt="Budaya Kalimantan" class="w-full h-full object-cover rounded-l-2xl">
                     <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-3 py-2 text-xs rounded-tr-lg rounded-bl-lg">
@@ -262,7 +263,7 @@
             </div>
     
             <!-- Kartu Kecil 2 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex h-40 w-full">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex h-40 w-full transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <div class="relative w-[45%] h-40">
                     <img src="/frontend/src/asset/img/lumpia.png" alt="Lumpia" class="w-full h-full object-cover rounded-l-2xl">
                     <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-3 py-2 text-xs rounded-tr-lg rounded-bl-lg">
@@ -279,7 +280,7 @@
             </div>
     
             <!-- Kartu Kecil 3 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex h-40 w-full">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex h-40 w-full transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <div class="relative w-[45%] h-40">
                     <img src="/frontend/src/asset/img/lumpia.png" alt="Lumpia" class="w-full h-full object-cover rounded-l-2xl">
                     <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-3 py-2 text-xs rounded-tr-lg rounded-bl-lg">

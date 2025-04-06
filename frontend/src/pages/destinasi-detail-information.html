@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Budaya</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="/frontend/src/script/index.js" defer></script>
+</head>
+
+<body class="bg-[#FAF5F2] font-[Plus_Jakarta_Sans]">
+    <!-- Navbar -->
+    <custom-navbar></custom-navbar>
+    
+    <!-- Konten Detail Destinasi -->
+    <main class="max-w-6xl mx-auto p-6 mt-40">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <!-- Gambar -->
+        <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="rounded-2xl w-full object-cover">
+
+        <!-- Detail Info -->
+        <div>
+            <!-- Nama Tempat & Lokasi -->
+            <h2 class="text-4xl font-semibold">Tanah Lot</h2>
+            <div class="flex items-center justify-between">
+                <p class="text-gray-500 text-base flex items-center mt-1 gap-1">
+                    <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-4 opacity-60">
+                    Tabanan, Bali
+                </p>
+                <div class="flex items-center space-x-3">
+                <span class="bg-[#EADBD1] text-[#AC654A] text-sm px-3 py-1 rounded-lg">Wisata Alam</span>
+                </div>
+            </div>
+
+            <!-- Rating Pengguna & Estimasi Harga Tiket -->
+             <div class="flex items-center justify-between mt-4">
+                <div class="flex items-center gap-1">
+                    <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                    <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                    <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                    <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                    <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                </div>
+                <p class="text-sm text-gray-600 font-normal">Rating 5.0 | 1.2K Wisatawan Menilai</p>
+             </div>
+             
+            <div class="mt-6">
+                <h6 class="text-base font-semibold"> Estimasi Harga Tiket</h6>
+                <div class="flex items-center justify-between mt-2">
+                    <img src="/frontend/src/asset/icon/hand-money.png" alt="" class="w-8 opacity-40">
+                    <p class="text-base font-normal text-gray-600">
+                        Mulai dari: Rp250.000-Rp500.000
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Button -->
+             <button class="mt-10 bg-[#4F834F] font-semibold text-base text-white rounded-lg px-6 py-2 hover:bg-[#304b30]">Pesan Tiket</button>
+        </div>
+        </div>
+
+
+        <section id="destination-description" class="mt-20">
+            <!-- Deskripsi -->
+            <h4 class="mt-3 text-2xl font-semibold">Deskripsi</h4>
+            <div class="mt-2">
+                <p class="text-base text-gray-900">
+                    <strong class="font-medium">Lokasi</strong><br>
+                    Desa Beraban, Kecamatan Kediri, Kabupaten Tabanan, Bali
+                    <br>
+                    <br>
+                    <strong class="font-medium">Daya Tarik Utama</strong><br>
+                    Pura di atas batu karang yang dikelilingi laut
+                    <br>
+                    <br>
+                    <strong class="font-medium">Tentang</strong><br>
+                    Tanah Lot merupakan tempat wisata spiritual dan budaya yang sangat populer di Bali. Nama "Tanah Lot" berasal dari kata "Tanah" (daratan) dan "Lot" atau "Lod" (laut), yang menggambarkan lokasinya: sebuah daratan kecil yang berada di tengah laut. Di tempat ini berdiri Pura Tanah Lot, sebuah pura laut yang dibangun untuk menghormati Dewa Baruna, dewa laut dalam kepercayaan Hindu Bali.
+                    <br>
+                    <br>
+                    <strong class="font-medium">Keistimewaan Tanah Lot</strong><br>
+                    • Pura di tengah laut: Saat air laut pasang, pura tampak terpisah dari daratan dan hanya bisa dilihat dari kejauhan, menciptakan pemandangan yang magis.
+                    <br>
+                    • Pemandangan matahari terbenam: Tanah Lot terkenal sebagai spot sunset terbaik di Bali. Saat senja, siluet pura berlatar langit jingga menciptakan pemandangan yang sangat memukau.
+                    <br>
+                    • Nilai spiritual: Pura ini merupakan salah satu dari tujuh pura laut di Bali yang membentuk garis pelindung spiritual di sepanjang pantai barat Bali.
+                    <br>
+                    • Ular suci: Di gua dekat pura, pengunjung bisa melihat ular laut suci yang diyakini menjaga pura dari roh jahat.
+                    <br>
+                    <br>
+                    <strong class="font-medium">Fasilitas dan Aktivitas</strong><br>
+                    • Jalan setapak menuju pura dengan kios oleh-oleh
+                    <br>
+                    • Area taman dan tempat duduk untuk menikmati pemandangan
+                    <br>
+                    • Pertunjukan tari kecak pada waktu tertentu
+                    <br>
+                    • Kafe dan restoran dengan panorama laut
+                    </p>
+            </div>
+        </section>
+
+        <!-- Ulasan Wisatawan -->
+        <section id="review-wisatawan" class="mt-20">
+            <h4 class="mt-3 text-2xl font-semibold">Ulasan Wisatawan</h4>
+            <!-- Card Ulasan -->
+            <div class="border rounded-xl shadow-sm p-6 mt-5">
+                <div class="flex items-center justify-between">
+                    <div class="flex gap-3 items-center">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                        <div class="grid">
+                            <span class="font-semibold text-base mb-1">Muhammad M.</span>
+                            <span class="font-normal text-gray-500 text-sm">21-02-2025</span>
+                        </div>
+                    </div>
+                        <div class="flex items-center gap-1">
+                            <span class="font-normal text-gray-500 text-sm">5.0</span>
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                        </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-6">
+                    Tempatnya sangat indah, cocok untuk foto-foto. Sayangnya cuaca sedang gerimis, jadi tidak bisa mendekat ke pura. Tapi tetap worth it untuk dikunjungi, apalagi suasana alam dan suara ombaknya bikin hati tenang dan pengalaman jadi berkesan meski cuaca kurang mendukung.
+                </p>
+            </div>
+
+            <!-- Card Ulasan -->
+            <div class="border rounded-xl shadow-sm p-6 mt-5">
+                <div class="flex items-center justify-between">
+                    <div class="flex gap-3 items-center">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                        <div class="grid">
+                            <span class="font-semibold text-base mb-1">Muhammad M.</span>
+                            <span class="font-normal text-gray-500 text-sm">21-02-2025</span>
+                        </div>
+                    </div>
+                        <div class="flex items-center gap-1">
+                            <span class="font-normal text-gray-500 text-sm">5.0</span>
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                        </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-6">
+                    Tempatnya sangat indah, cocok untuk foto-foto. Sayangnya cuaca sedang gerimis, jadi tidak bisa mendekat ke pura. Tapi tetap worth it untuk dikunjungi, apalagi suasana alam dan suara ombaknya bikin hati tenang dan pengalaman jadi berkesan meski cuaca kurang mendukung.
+                </p>
+            </div>
+
+            <!-- Card Ulasan -->
+            <div class="border rounded-xl shadow-sm p-6 mt-5">
+                <div class="flex items-center justify-between">
+                    <div class="flex gap-3 items-center">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+                        <div class="grid">
+                            <span class="font-semibold text-base mb-1">Muhammad M.</span>
+                            <span class="font-normal text-gray-500 text-sm">21-02-2025</span>
+                        </div>
+                    </div>
+                        <div class="flex items-center gap-1">
+                            <span class="font-normal text-gray-500 text-sm">5.0</span>
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                            <img src="/frontend/src/asset/icon/star-yellow.png" alt="star" class="w-4">
+                        </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-6">
+                    Tempatnya sangat indah, cocok untuk foto-foto. Sayangnya cuaca sedang gerimis, jadi tidak bisa mendekat ke pura. Tapi tetap worth it untuk dikunjungi, apalagi suasana alam dan suara ombaknya bikin hati tenang dan pengalaman jadi berkesan meski cuaca kurang mendukung.
+                </p>
+            </div>
+        </section>
+    
+        <!-- Rekomendasi -->
+        <section class="mt-16 mb-20">
+        <h3 class="text-2xl font-semibold mb-4">
+            <span class="text-[#AC654A]">Rekomendasi</span> Wisata Serupa
+        </h3>
+        <div class="flex items-center gap-4">
+
+            <!-- Card 1 -->
+            <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg" class="rounded-t-xl h-40 w-full object-cover">
+            <div class="p-4">
+                <h4 class="font-semibold text-lg">Tanah Lot</h4>
+                <p class="text-gray-500 text-sm flex items-center mt-1 gap-1">
+                    <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60">
+                    Tabanan, Bali
+                </p>
+                <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                    Cagar Alam
+                    <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                </span>
+                <a href="#" class= "mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]">
+                    Selengkapnya
+                </a>
+            </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg" class="rounded-t-xl h-40 w-full object-cover">
+                <div class="p-4">
+                    <h4 class="font-semibold text-lg">Tanah Lot</h4>
+                    <p class="text-gray-500 text-sm flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <a href="#" class= "mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg" class="rounded-t-xl h-40 w-full object-cover">
+                <div class="p-4">
+                    <h4 class="font-semibold text-lg">Tanah Lot</h4>
+                    <p class="text-gray-500 text-sm flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <a href="#" class= "mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg" class="rounded-t-xl h-40 w-full object-cover">
+                <div class="p-4">
+                    <h4 class="font-semibold text-lg">Tanah Lot</h4>
+                    <p class="text-gray-500 text-sm flex items-center mt-1 gap-1">
+                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60">
+                        Tabanan, Bali
+                    </p>
+                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
+                        Cagar Alam
+                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    </span>
+                    <a href="#" class= "mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]">
+                        Selengkapnya
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tambah navigasi panah jika pakai JS -->
+        </div>
+        </section>
+    </main>
+        
+    
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+</body>
+</html>
