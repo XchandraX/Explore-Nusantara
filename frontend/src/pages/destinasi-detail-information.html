@@ -177,91 +177,131 @@
         </section>
     
         <!-- Rekomendasi -->
-        <section class="mt-16 mb-20">
-        <h3 class="text-2xl font-semibold mb-4">
-            <span class="text-[#AC654A]">Rekomendasi</span> Wisata Serupa
-        </h3>
-        <div class="flex items-center gap-4">
-
-            <!-- Card 1 -->
-            <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg" class="rounded-t-xl h-40 w-full object-cover">
-            <div class="p-4">
-                <h4 class="font-semibold text-lg">Tanah Lot</h4>
-                <p class="text-gray-500 text-sm flex items-center mt-1 gap-1">
-                    <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60">
-                    Tabanan, Bali
-                </p>
-                <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
-                    Cagar Alam
-                    <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
-                </span>
-                <a href="#" class= "mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]">
-                    Selengkapnya
-                </a>
-            </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg" class="rounded-t-xl h-40 w-full object-cover">
-                <div class="p-4">
+        <section class="mt-32 mb-20">
+            <h3 class="text-2xl font-semibold mb-4">
+              <span class="text-[#AC654A]">Rekomendasi</span> Wisata Serupa
+            </h3>
+          
+            <!-- Scroll Container -->
+            <div
+              class="overflow-x-auto scroll-smooth"
+              style="-ms-overflow-style: none; -webkit-overflow-scrolling: touch;"
+            >
+          
+              <div class="flex items-center gap-4 w-max mt-2 mb-4 ml-2">
+                <!-- Card 1 -->
+                <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg"
+                    class="rounded-t-xl h-40 w-full object-cover"
+                  />
+                  <div class="p-4">
                     <h4 class="font-semibold text-lg">Tanah Lot</h4>
                     <p class="text-gray-500 text-sm flex items-center mt-1 gap-1">
-                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60">
-                        Tabanan, Bali
+                      <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60" />
+                      Tabanan, Bali
                     </p>
-                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
-                        Cagar Alam
-                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    <span
+                      class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between"
+                    >
+                      Cagar Alam
+                      <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4" />
                     </span>
-                    <a href="#" class= "mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]">
-                        Selengkapnya
+                    <a
+                      href="#"
+                      class="mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]"
+                    >
+                      Selengkapnya
                     </a>
+                  </div>
                 </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg" class="rounded-t-xl h-40 w-full object-cover">
-                <div class="p-4">
+          
+                <!-- Duplikat card 2-4, kamu bisa ubah isinya -->
+                <!-- Card 2 -->
+                <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg"
+                    class="rounded-t-xl h-40 w-full object-cover"
+                  />
+                  <div class="p-4">
                     <h4 class="font-semibold text-lg">Tanah Lot</h4>
                     <p class="text-gray-500 text-sm flex items-center mt-1 gap-1">
-                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60">
-                        Tabanan, Bali
+                      <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60" />
+                      Tabanan, Bali
                     </p>
-                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
-                        Cagar Alam
-                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    <span
+                      class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between"
+                    >
+                      Cagar Alam
+                      <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4" />
                     </span>
-                    <a href="#" class= "mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]">
-                        Selengkapnya
+                    <a
+                      href="#"
+                      class="mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]"
+                    >
+                      Selengkapnya
                     </a>
+                  </div>
                 </div>
-            </div>
-    
-            <!-- Card 4 -->
-            <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg" class="rounded-t-xl h-40 w-full object-cover">
-                <div class="p-4">
+          
+                <!-- Card 3 -->
+                <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg"
+                    class="rounded-t-xl h-40 w-full object-cover"
+                  />
+                  <div class="p-4">
                     <h4 class="font-semibold text-lg">Tanah Lot</h4>
                     <p class="text-gray-500 text-sm flex items-center mt-1 gap-1">
-                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60">
-                        Tabanan, Bali
+                      <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60" />
+                      Tabanan, Bali
                     </p>
-                    <span class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
-                        Cagar Alam
-                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4">
+                    <span
+                      class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between"
+                    >
+                      Cagar Alam
+                      <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4" />
                     </span>
-                    <a href="#" class= "mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]">
-                        Selengkapnya
+                    <a
+                      href="#"
+                      class="mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]"
+                    >
+                      Selengkapnya
                     </a>
+                  </div>
                 </div>
+          
+                <!-- Card 4 -->
+                <div class="min-w-[250px] rounded-xl shadow-md border overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tanah_Lot%2C_Bali.jpg/800px-Tanah_Lot%2C_Bali.jpg"
+                    class="rounded-t-xl h-40 w-full object-cover"
+                  />
+                  <div class="p-4">
+                    <h4 class="font-semibold text-lg">Tanah Lot</h4>
+                    <p class="text-gray-500 text-sm flex items-center mt-1 gap-1">
+                      <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 opacity-60" />
+                      Tabanan, Bali
+                    </p>
+                    <span
+                      class="text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-2 py-1 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between"
+                    >
+                      Cagar Alam
+                      <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-4 h-4" />
+                    </span>
+                    <a
+                      href="#"
+                      class="mt-4 bg-[#4F834F] block text-base text-white text-center py-1 rounded-lg hover:bg-[#304b30]"
+                    >
+                      Selengkapnya
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <!-- Tambah navigasi panah jika pakai JS -->
-        </div>
-        </section>
+          </section>
+          
+          
     </main>
         
     
