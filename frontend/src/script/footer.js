@@ -11,14 +11,14 @@ class CustomFooter extends HTMLElement {
                 </div>
 
                 <!-- Navigation -->
-                <ul class="flex justify-center md:justify-center space-x-10 text-white font-normal">
-                    <li><a href="#" class="hover:text-[#CEE4CE]">Beranda</a></li>
-                    <li><a href="#" class="hover:text-[#CEE4CE]">Destinasi</a></li>
-                    <li><a href="#" class="hover:text-[#CEE4CE]">Budaya</a></li>
+                <ul class="grid md:flex justify-center md:justify-center md:space-x-10 text-white font-normal">
+                    <li class="py-2"><a href="#" class="hover:text-[#CEE4CE]">Beranda</a></li>
+                    <li class="py-2"><a href="#" class="hover:text-[#CEE4CE]">Destinasi</a></li>
+                    <li class="py-2"><a href="#" class="hover:text-[#CEE4CE]">Budaya</a></li>
                 </ul>
 
                 <!-- Social Media -->
-                <ul class="flex justify-center md:justify-end space-x-4">
+                <ul class="flex justify-center md:justify-end space-x-4 mt-3 md:mt-0">
                     <li><a href="#"><img src="/frontend/src/asset/icon/instagram-icon.png" alt="Instagram" class="h-6"></a></li>
                     <li><a href="#"><img src="/frontend/src/asset/icon/facebook-icon.png" alt="Facebook" class="h-6"></a></li>
                     <li><a href="#"><img src="/frontend/src/asset/icon/twitter-icon.png" alt="Twitter" class="h-6"></a></li>

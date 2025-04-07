@@ -2,7 +2,7 @@ class CustomNavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header>
-            <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between md:px-16 py-3 shadow-md bg-[#FAF5F2]">
+            <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-16 py-3 shadow-md bg-[#FAF5F2]">
                 <!-- Logo -->
                 <a href="#" class="flex items-center">
                     <img src="/frontend/src/asset/img/explore-nusantara-logo.png" alt="Explore Nusantara Logo" class="w-6 md:w-12 mr-2">
@@ -11,7 +11,7 @@ class CustomNavbar extends HTMLElement {
             
                 <!-- Menu Hamburger (Mobile) -->
                 <button id="menu-toggle" class="md:hidden">
-                    <img src="/frontend/src/asset/icon/menu-hamburger.png" alt="menu-hamburger" class="w-6">
+                    <img src="/frontend/src/asset/icon/menu-hamburger.png" alt="menu-hamburger" class="w-5">
                 </button>
 
                 <!-- Navigasi di Tengah -->
