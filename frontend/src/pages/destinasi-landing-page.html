@@ -6,6 +6,7 @@
     <title>Landing Page Budaya</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script type="module" src="/frontend/src/script/index.js" defer></script>
 </head>
 
@@ -35,19 +36,16 @@
         <!-- Nanti data akan difilter menggunakan berdasarkan data kategori yang sudah tersedia di dataset -->
 
         <!-- Opsi Jenis Dentinasi -->
-         <div class="flex gap-3 mb-5">
-            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="all">Semua</button>
-            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="budaya">Budaya</button>
-            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="taman-nasional">Taman Nasional</button>
-            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="desa-wisata">Desa Wisata</button>
-            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="cagar-alam">Cagar Alam</button>
-            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="taman-hiburan">Taman Hiburan</button>
-            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="bahari">Bahari</button>
-            <button class="border-solid border-2 border-[#AC654A] font-normal text-black py-2 px-4 rounded-full" data-category="sejarah">Sejarah</button>
-         </div>
+        <div class="flex gap-3 mb-5">
+            <button class="category-button border-2 border-[#AC654A] text-black py-2 px-4 rounded-full hover:bg-[#AC654A] hover:text-white transition">Semua</button>
+            <button class="category-button border-2 border-[#AC654A] text-black py-2 px-4 rounded-full hover:bg-[#AC654A] hover:text-white transition">Wisata Alam</button>
+            <button class="category-button border-2 border-[#AC654A] text-black py-2 px-4 rounded-full hover:bg-[#AC654A] hover:text-white transition">Pantai</button>
+            <button class="category-button border-2 border-[#AC654A] text-black py-2 px-4 rounded-full hover:bg-[#AC654A] hover:text-white transition">Sejarah</button>
+            <button class="category-button border-2 border-[#AC654A] text-black py-2 px-4 rounded-full hover:bg-[#AC654A] hover:text-white transition">Kuliner</button>
+          </div>
 
         <!-- Card Budaya & Tradisi -->
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10 mt-10">
             <!--Card 1-->
             <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-full h-60 object-cover rounded-tl-xl rounded-tr-xl">
@@ -328,17 +326,24 @@
 
         <!--Button untuk beralih ke data selanjutnya-->
         <div class="flex justify-center items-center space-x-2 mt-20" id="pagination">
-            <button id="prev" class="">
-                <img src="/frontend/src/asset/icon/navigate-icon-30-opacity.png" alt="Naivigate Previous" class="w-7 rotate-180">
+            <!-- Tombol Sebelumnya -->
+            <button id="prev">
+              <img src="/frontend/src/asset/icon/navigate-icon-30-opacity.png" alt="Navigate Previous" class="w-7 rotate-180">
             </button>
-            <button class="px-3 py-1 bg-[#ac654a] text-white rounded">1</button>
-            <button class="px-3 py-1 text-gray-500">2</button>
-            <button class="px-3 py-1 text-gray-500">3</button>
-            <button class="px-3 py-1 text-gray-500">4</button>
-            <button class="px-3 py-1 text-gray-500">5</button>
+          
+            <!-- Tombol Halaman -->
+            <button class="page-btn px-3 py-1 bg-[#ac654a] text-white rounded">1</button>
+            <button class="page-btn px-3 py-1 text-gray-700 rounded hover:bg-[#ac654a] hover:text-white transition">2</button>
+            <button class="page-btn px-3 py-1 text-gray-700 rounded hover:bg-[#ac654a] hover:text-white transition">3</button>
+            <button class="page-btn px-3 py-1 text-gray-700 rounded hover:bg-[#ac654a] hover:text-white transition">4</button>
+            <button class="page-btn px-3 py-1 text-gray-700 rounded hover:bg-[#ac654a] hover:text-white transition">5</button>
+          
+            <!-- Ellipsis -->
             <span class="px-2 text-gray-500">...</span>
-            <button id="prev" class="">
-                <img src="/frontend/src/asset/icon/navigate-icon-30-opacity.png" alt="Naivigate Next" class="w-7">
+          
+            <!-- Tombol Selanjutnya -->
+            <button id="next">
+              <img src="/frontend/src/asset/icon/navigate-icon-30-opacity.png" alt="Navigate Next" class="w-7">
             </button>
           </div>
           

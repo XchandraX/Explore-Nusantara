@@ -56,5 +56,3 @@ customElements.define("destination-card", destinationCard);
         // const id = this.getAttribute("id") || ""; // ID untuk navigasi detail
 
 
-
-
