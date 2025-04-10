@@ -6,7 +6,7 @@
     <title>Landing Page Budaya</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="/frontend/src/script/index.js" defer></script>
+    <script type="module" src="/frontend/src/index.js" defer></script>
 </head>
 
 <body class="bg-[#FAF5F2] font-[Plus_Jakarta_Sans]">
@@ -14,21 +14,21 @@
     <custom-navbar></custom-navbar>
     
     <!-- Hero Section -->
-    <section class="mt-16 px-16">
-        <div class="relative w-full h-[900px] overflow-hidden rounded-xl">
-            <img src="/frontend/src/asset/img/budaya-kalimantan.png" alt="Hero" class="w-full h-full object-cover rounded-3xl">
-            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-white p-8 rounded-3xl">
+    <section class="mt-8 md:mt-16 px-0 md:px-16">
+        <div class="relative w-full h-[900px] overflow-hidden rounded-none md:rounded-xl">
+            <img src="/frontend/src/asset/img/budaya-kalimantan.png" alt="Hero" class="w-full h-full object-cover rounded-none md:rounded-3xl">
+            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent text-white p-8 rounded-none md:rounded-3xl">
                 <h1 class="text-5xl font-semibold drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)]">Desa Adat di Kalimantan, Kental akan <br> Budaya dan Tradisi</h1>
-                <p class="text-base font-normal drop-shadow-[0_3px_6px_rgba(0,0,0,0.8)] max-w-[1090px] mt-4">Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya. Pulau yang mayoritas dihuni oleh Suku Dayak ini terkenal dengan budaya yang sangat kental, dan masih terus lestari hingga saat ini. Hal tersebut bisa dilihat dari banyaknya desa-desa adat di Kalimantan  yang masih terjaga kelestariannya.</p>
+                <p class="text-sm md:text-base font-normal drop-shadow-[0_3px_6px_rgba(0,0,0,0.8)] max-w-[1090px] mt-4">Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya. Pulau yang mayoritas dihuni oleh Suku Dayak ini terkenal dengan budaya yang sangat kental, dan masih terus lestari hingga saat ini. Hal tersebut bisa dilihat dari banyaknya desa-desa adat di Kalimantan yang masih terjaga kelestariannya.</p>
             </div>
         </div>
     </section>
     
     
     <!-- Konten Budaya -->
-    <section class="px-16 mt-40 mb-40">
+    <section class="px-6 md:px-16 my-20 md:my-40">
         <!-- Title Budaya & Tradisi -->
-        <h2 class="font-semibold text-3xl mb-8">
+        <h2 class="font-semibold text-2xl md:text-3xl mb-2 md:mb-8">
             <span class="text-[#AC654A]">Budaya</span>
             <span class="text-black">& Tradisi</span>
         </h2>
@@ -40,22 +40,22 @@
             <div class="relative rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-xl w-full md:w-auto md:scroll-snap-align-none" style="scroll-snap-align: start;">
               <div class="relative">
                 <img src="/frontend/src/asset/img/budaya-kalimantan.png" alt="Budaya" class="w-full rounded-t-2xl">
-                <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-3 py-2 text-xs rounded-tr-lg">
+                <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-2 md:px-3 py-1 md:py-2 text-xs rounded-tr-lg">
                   Budaya & Tradisi
                 </span>
               </div>
-              <div class="p-4">
-                <h3 class="font-semibold mt-2 text-lg">Desa Adat di Kalimantan, Kental akan Budaya dan Tradisi</h3>
-                <p class="text-gray-600 mt-3 text-sm">
+              <div class="p-3 md:p-4">
+                <h3 class="font-semibold mt-1 md:mt-2 text-base md:text-lg">Desa Adat di Kalimantan, Kental akan Budaya dan Tradisi</h3>
+                <p class="text-gray-600 mt-1 md:mt-3 text-xs md:text-sm">
                   Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya...
                   <a href="budaya-detail-information.html" class="text-[#4F834F] font-semibold">Baca Selengkapnya.</a>
                 </p>
-                <div class="flex justify-between items-center text-gray-500 text-sm mt-4">
+                <div class="flex justify-between items-center text-gray-500 text-xs md:text-sm mt-2 md:mt-4">
                   <span class="flex items-center">
-                    <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-5 mr-2"> 8 Agustus 2024
+                    <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-4 md:h-5 mr-2"> 8 Agustus 2024
                   </span>
                   <span class="flex items-center">
-                    <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-5 mr-2"> 20
+                    <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-4 md:h-5 mr-2"> 20
                   </span>
                 </div>
               </div>
@@ -65,150 +65,152 @@
             <div class="relative rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-xl w-full md:w-auto md:scroll-snap-align-none" style="scroll-snap-align: start;">
               <div class="relative">
                 <img src="/frontend/src/asset/img/budaya-kalimantan.png" alt="Budaya" class="w-full rounded-t-2xl">
-                <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-3 py-2 text-xs rounded-tr-lg">
+                <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-2 md:px-3 py-1 md:py-2 text-xs rounded-tr-lg">
                   Budaya & Tradisi
                 </span>
               </div>
-              <div class="p-4">
-                <h3 class="font-semibold mt-2 text-lg">Desa Adat di Kalimantan, Kental akan Budaya dan Tradisi</h3>
-                <p class="text-gray-600 mt-3 text-sm">
+              <div class="p-3 md:p-4">
+                <h3 class="font-semibold mt-1 md:mt-2 text-base md:text-lg">Desa Adat di Kalimantan, Kental akan Budaya dan Tradisi</h3>
+                <p class="text-gray-600 mt-1 md:mt-3 text-xs md:text-sm">
                   Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya...
                   <a href="budaya-detail-information.html" class="text-[#4F834F] font-semibold">Baca Selengkapnya.</a>
                 </p>
-                <div class="flex justify-between items-center text-gray-500 text-sm mt-4">
+                <div class="flex justify-between items-center text-gray-500 text-xs md:text-sm mt-2 md:mt-4">
                   <span class="flex items-center">
-                    <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-5 mr-2"> 8 Agustus 2024
+                    <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-4 md:h-5 mr-2"> 8 Agustus 2024
                   </span>
                   <span class="flex items-center">
-                    <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-5 mr-2"> 20
+                    <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-4 md:h-5 mr-2"> 20
                   </span>
                 </div>
               </div>
             </div>
-          
+
             <!-- card 3 -->
             <div class="relative rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-xl w-full md:w-auto md:scroll-snap-align-none" style="scroll-snap-align: start;">
               <div class="relative">
                 <img src="/frontend/src/asset/img/budaya-kalimantan.png" alt="Budaya" class="w-full rounded-t-2xl">
-                <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-3 py-2 text-xs rounded-tr-lg">
+                <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-2 md:px-3 py-1 md:py-2 text-xs rounded-tr-lg">
                   Budaya & Tradisi
                 </span>
               </div>
-              <div class="p-4">
-                <h3 class="font-semibold mt-2 text-lg">Desa Adat di Kalimantan, Kental akan Budaya dan Tradisi</h3>
-                <p class="text-gray-600 mt-3 text-sm">
+              <div class="p-3 md:p-4">
+                <h3 class="font-semibold mt-1 md:mt-2 text-base md:text-lg">Desa Adat di Kalimantan, Kental akan Budaya dan Tradisi</h3>
+                <p class="text-gray-600 mt-1 md:mt-3 text-xs md:text-sm">
                   Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya...
                   <a href="budaya-detail-information.html" class="text-[#4F834F] font-semibold">Baca Selengkapnya.</a>
                 </p>
-                <div class="flex justify-between items-center text-gray-500 text-sm mt-4">
+                <div class="flex justify-between items-center text-gray-500 text-xs md:text-sm mt-2 md:mt-4">
                   <span class="flex items-center">
-                    <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-5 mr-2"> 8 Agustus 2024
+                    <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-4 md:h-5 mr-2"> 8 Agustus 2024
                   </span>
                   <span class="flex items-center">
-                    <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-5 mr-2"> 20
+                    <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-4 md:h-5 mr-2"> 20
                   </span>
                 </div>
               </div>
             </div>
           </div>
-        <div class="text-center mt-16 flex justify-center">
+        <div class="text-center mt-6 md:mt-16 flex justify-center">
             <a href="#" class="px-5 py-1 border-2 border-solid border-[#4F834F] rounded-lg text-[#4F834F] font-semibold hover:bg-[#4F834F] hover:text-white transition">
                 Lihat lagi
             </a>
         </div>
     </section>
+
 
     <!-- Konten Informasi kuliner -->
-    <section class="px-16 mt-40 mb-40">
-        <!-- Title Kuliner Tradisional -->
-        <h2 class="font-semibold text-3xl mb-8">
-            <span class="text-[#AC654A]">Kuliner</span>
-            <span class="text-black">Tradisional</span>
-        </h2>
-
-        <!-- Card Kuliner Tradisional -->
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 pb-4 md:pb-0 overflow-visible">
-            <!-- Card 1 -->
-            <div class="relative rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-xl">
+    <section class="px-6 md:px-16 my-20 md:my-40">
+          <!-- Title Kuliner Tradisional -->
+          <h2 class="font-semibold text-2xl md:text-3xl mb-2 md:mb-8">
+              <span class="text-[#AC654A]">Kuliner</span>
+              <span class="text-black">Tradisional</span>
+          </h2>
+          
+          <!-- Card Budaya -->
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 pb-4 md:pb-0 overflow-visible">
+  
+              <!-- card 1 -->
+              <div class="relative rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-xl w-full md:w-auto md:scroll-snap-align-none" style="scroll-snap-align: start;">
                 <div class="relative">
-                    <img src="/frontend/src/asset/img/lumpia.png" alt="Budaya" class="w-full rounded-t-2xl">
-                    <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-3 py-2 text-xs rounded-tr-lg">
-                        Budaya & Tradisi
+                  <img src="/frontend/src/asset/img/lumpia.png" alt="Lumpia" class="w-full rounded-t-2xl">
+                  <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-2 md:px-3 py-1 md:py-2 text-xs rounded-tr-lg">
+                    Kuliner Tradisional
+                  </span>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h3 class="font-semibold mt-1 md:mt-2 text-base md:text-lg">Sejarah Lumpia, Makanan Nikmat asal Kota Semarang!</h3>
+                  <p class="text-gray-600 mt-1 md:mt-3 text-xs md:text-sm">
+                    Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya...
+                    <a href="budaya-detail-information.html" class="text-[#4F834F] font-semibold">Baca Selengkapnya.</a>
+                  </p>
+                  <div class="flex justify-between items-center text-gray-500 text-xs md:text-sm mt-2 md:mt-4">
+                    <span class="flex items-center">
+                      <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-4 md:h-5 mr-2"> 8 Agustus 2024
                     </span>
+                    <span class="flex items-center">
+                      <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-4 md:h-5 mr-2"> 20
+                    </span>
+                  </div>
                 </div>
-                <div class="p-4">
-                    <h3 class="font-semibold mt-2 text-lg">Sejarah Lumpia, Makanan Nikmat asal Kota Semarang!</h3>
-                    <p class="text-gray-600 mt-3 text-sm">
-                        Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya. Pulau yang mayoritas dihuni oleh Suku Dayak ini...
-                        <a href="detail_information.html" class="text-[#4F834F] font-semibold">Baca Selengkapnya.</a>
-                    </p>
-                    <div class="flex justify-between items-center text-gray-500 text-sm mt-4">
-                        <span class="flex items-center">
-                            <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-5 mr-2"> 8 Agustus 2024
-                        </span>
-                        <span class="flex items-center">
-                            <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-5 mr-2"> 20
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="relative rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-xl">
+              </div>
+            
+              <!-- card 2 -->
+              <div class="relative rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-xl w-full md:w-auto md:scroll-snap-align-none" style="scroll-snap-align: start;">
                 <div class="relative">
-                    <img src="/frontend/src/asset/img/lumpia.png" alt="Budaya" class="w-full rounded-t-2xl">
-                    <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-3 py-2 text-xs rounded-tr-lg">
-                        Budaya & Tradisi
+                  <img src="/frontend/src/asset/img/lumpia.png" alt="Lumpia" class="w-full rounded-t-2xl">
+                  <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-2 md:px-3 py-1 md:py-2 text-xs rounded-tr-lg">
+                    Kuliner Tradisional
+                  </span>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h3 class="font-semibold mt-1 md:mt-2 text-base md:text-lg">Sejarah Lumpia, Makanan Nikmat asal Kota Semarang!</h3>
+                  <p class="text-gray-600 mt-1 md:mt-3 text-xs md:text-sm">
+                    Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya...
+                    <a href="budaya-detail-information.html" class="text-[#4F834F] font-semibold">Baca Selengkapnya.</a>
+                  </p>
+                  <div class="flex justify-between items-center text-gray-500 text-xs md:text-sm mt-2 md:mt-4">
+                    <span class="flex items-center">
+                      <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-4 md:h-5 mr-2"> 8 Agustus 2024
                     </span>
+                    <span class="flex items-center">
+                      <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-4 md:h-5 mr-2"> 20
+                    </span>
+                  </div>
                 </div>
-                <div class="p-4">
-                    <h3 class="font-semibold mt-2 text-lg">Sejarah Lumpia, Makanan Nikmat asal Kota Semarang!</h3>
-                    <p class="text-gray-600 mt-3 text-sm">
-                        Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya. Pulau yang mayoritas dihuni oleh Suku Dayak ini...
-                        <a href="detail_information.html" class="text-[#4F834F] font-semibold">Baca Selengkapnya.</a>
-                    </p>
-                    <div class="flex justify-between items-center text-gray-500 text-sm mt-4">
-                        <span class="flex items-center">
-                            <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-5 mr-2"> 8 Agustus 2024
-                        </span>
-                        <span class="flex items-center">
-                            <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-5 mr-2"> 20
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="relative rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-xl">
+              </div>
+  
+              <!-- card 3 -->
+              <div class="relative rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-xl w-full md:w-auto md:scroll-snap-align-none" style="scroll-snap-align: start;">
                 <div class="relative">
-                    <img src="/frontend/src/asset/img/lumpia.png" alt="Budaya" class="w-full rounded-t-2xl">
-                    <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-3 py-2 text-xs rounded-tr-lg">
-                        Budaya & Tradisi
+                  <img src="/frontend/src/asset/img/lumpia.png" alt="Lumpia" class="w-full rounded-t-2xl">
+                  <span class="absolute bottom-0 left-0 bg-[#AC654A] text-white px-2 md:px-3 py-1 md:py-2 text-xs rounded-tr-lg">
+                    Kuliner Tradisional
+                  </span>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h3 class="font-semibold mt-1 md:mt-2 text-base md:text-lg">Sejarah Lumpia, Makanan Nikmat asal Kota Semarang!</h3>
+                  <p class="text-gray-600 mt-1 md:mt-3 text-xs md:text-sm">
+                    Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya...
+                    <a href="budaya-detail-information.html" class="text-[#4F834F] font-semibold">Baca Selengkapnya.</a>
+                  </p>
+                  <div class="flex justify-between items-center text-gray-500 text-xs md:text-sm mt-2 md:mt-4">
+                    <span class="flex items-center">
+                      <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-4 md:h-5 mr-2"> 8 Agustus 2024
                     </span>
+                    <span class="flex items-center">
+                      <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-4 md:h-5 mr-2"> 20
+                    </span>
+                  </div>
                 </div>
-                <div class="p-4">
-                    <h3 class="font-semibold mt-2 text-lg">Sejarah Lumpia, Makanan Nikmat asal Kota Semarang!</h3>
-                    <p class="text-gray-600 mt-3 text-sm">
-                        Membahas soal budaya, Pulau Kalimantan memang tidak ada habisnya. Pulau yang mayoritas dihuni oleh Suku Dayak ini...
-                        <a href="detail_information.html" class="text-[#4F834F] font-semibold">Baca Selengkapnya.</a>
-                    </p>
-                    <div class="flex justify-between items-center text-gray-500 text-sm mt-4">
-                        <span class="flex items-center">
-                            <img src="/frontend/src/asset/icon/calendar-icon.png" alt="Calendar Icon" class="h-5 mr-2"> 8 Agustus 2024
-                        </span>
-                        <span class="flex items-center">
-                            <img src="/frontend/src/asset/icon/eyes-icon.png" alt="Eyes Icon" class="h-5 mr-2"> 20
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-16 flex justify-center">
-            <a href="#" class="px-5 py-1 border-2 border-solid border-[#4F834F] rounded-lg text-[#4F834F] font-semibold hover:bg-[#4F834F] hover:text-white transition">
-                Lihat lagi
-            </a>
-        </div>
-    </section>
+              </div>
+          <div class="text-center mt-6 md:mt-16 flex justify-center">
+              <a href="#" class="px-5 py-1 border-2 border-solid border-[#4F834F] rounded-lg text-[#4F834F] font-semibold hover:bg-[#4F834F] hover:text-white transition">
+                  Lihat lagi
+              </a>
+          </div>
+      </section>
+
     
     <!-- Footer -->
     <custom-footer></custom-footer>

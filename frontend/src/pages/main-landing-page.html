@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="/frontend/src/script/index.js" defer></script>
+    <script type="module" src="/frontend/src/index.js" defer></script>
 </head>
 
 <body class="bg-[#FAF5F2] font-[Plus_Jakarta_Sans]">
@@ -33,10 +33,10 @@
               </div>
 
             <!-- Bagian Gambar -->
-            <div class="relative md:w-1/2 grid grid-cols-2 gap-8 mt-16 sm:mt-24 items-center">
+            <div class="relative md:w-1/2 grid grid-cols-2 gap-4 md:gap-8 mt-16 sm:mt-24 items-center">
                 <!-- Dekorasi -->
-                <img src="/frontend/src/asset/img/dekorasi.png" alt="" class="absolute top-40 left-96 object-contain z-10">
-                <img src="/frontend/src/asset/img/dekorasi.png" alt="" class="absolute top-0 left-10 object-contain z-10">
+                <img src="/frontend/src/asset/img/dekorasi.png" alt="" class="absolute h-[40%] md:h-[45%] top-50 md:top-40 left-48 md:left-96 object-contain z-10">
+                <img src="/frontend/src/asset/img/dekorasi.png" alt="" class="absolute h-[40%] md:h-[45%] top-0 left-9 md:left-10 object-contain z-10">
                 <!-- Gambar Besar (kiri) -->
                 <img src="/frontend/src/asset/img/pura-bali.png" alt="Pura Bali"
                 class="w-full h-auto rounded-xl row-span-2 object-cover md:mt-8 z-30">
@@ -48,8 +48,6 @@
                 <!-- Gambar Kecil 2 (kanan bawah) -->
                 <img src="/frontend/src/asset/img/tari-bali.png" alt="Tari Bali"
                 class="w-full h-auto rounded-xl object-cover z-30">
-
-
             </div>
             
 
@@ -66,27 +64,7 @@
         <div id="container-destinasi-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
 
             <!-- Card 1 -->
-            <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl md:max-w-xl">
-                <img src="/frontend/src/asset/img/tanah-lot.png" alt="Tanah Lot" class="w-174 h-auto md:w-full md:h-60 object-cover rounded-tl-xl rounded-tr-xl">
-                <div class="p-4 md:p-6 md:mb-4">
-                    <h3 class="text-xl md:text-2xl font-semibold">Tanah Lot</h3>
-                    <p class="text-gray-500 text-xs md:text-base flex items-center md:mt-1 gap-1">
-                        <img src="/frontend/src/asset/icon/location-icon.png" alt="location-icon" class="h-3 md:h-4 opacity-60">
-                        Tabanan, Bali
-                    </p>
-                    <span class="text-xs md:text-sm font-normal text-[#C59172] bg-[#F3EAE1] px-1 md:px-2 py-1 md:py-2 rounded-md flex items-center gap-1 mt-2 mb-2 justify-between">
-                        Wisata Alam
-                        <img src="/frontend/src/asset/icon/daun.png" alt="" class="w-2 md:w-4 h-2 md:h-4">
-                    </span>
-                    <p class="text-gray-600 text-xs md:text-sm mt-2 mb-2 d:mb-6">
-                        Tanah Lot adalah salah satu destinasi wisata ikonik di Bali yang terkenal dengan pura yang berdiri di atas batu karang besar  di tepi laut.
-                    </p>
-
-                    <a href="#" class="bg-[#4F834F] text-sm md:text-base text-white text-center py-1 md:py-2 px-2 md:px-3 rounded-md md:rounded-lg hover:bg-[#304b30]">
-                        Selengkapnya
-                    </a>
-                </div>
-            </div>
+            <destination-card></destination-card>
 
             <!-- Card 2 -->
             <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl md:w-400">

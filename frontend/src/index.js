@@ -1,7 +1,6 @@
-import "./navbar.js";
-import "./footer.js";
-import "./destination-card.js";
-// import destinations from "./example-data.js";
+import "./components/navbar.js";
+import "./components/footer.js";
+import "./components/destination-card.js";
 
 //Menu Navbar
 const menuToggle = document.getElementById('menu-toggle');
