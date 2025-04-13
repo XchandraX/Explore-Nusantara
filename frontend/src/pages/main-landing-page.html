@@ -184,10 +184,128 @@
 
             <!-- Tombol Temukan Lagi -->
             <div class="text-center mt-9 md:mt-16 flex justify-center">
-                <a href="destinasi-landing-page.html" class="px-3 md:px-4 py-1 md:py-2 border-2 border-solid border-[#4F834F] rounded-lg text-smmd:text-base text-[#4F834F] font-semibold hover:bg-[#4F834F] hover:text-white transition">
+                <a href="destinasi-landing-page.html" class="px-3 md:px-4 py-1 md:py-2 border-2 border-solid border-[#4F834F] rounded-lg text-sm md:text-base text-[#4F834F] font-semibold hover:bg-[#4F834F] hover:text-white transition">
                     Temukan Lagi
                 </a>
             </div>
+    </section>
+
+
+    <!-- Bagian Kuis Destinasi -->
+
+    <!-- Bagian 1: Intro Kuis -->
+    <section id="introSection" class="min-h-screen flex flex-col justify-center items-center bg-[#4F834F] text-white px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold my-16 text-center">Atur Preferensi Destinasi</h2>
+        <div class="relative w-full max-w-2xl flex justify-center items-center m-12">
+            <img src="/frontend/src/asset/img/indonesia-island.png" alt="Pulau Indonesia" class="rounded-lg shadow-lg w-72 z-0 relative">
+            <img src="/frontend/src/asset/img/borobudur.png" alt="Borobudur" class="absolute -top-8 right-16 w-40 rounded-lg shadow-lg translate-x-10 -translate-y-6 z-0">
+            <img src="/frontend/src/asset/img/temple-bali-indonesia.png" alt="Bali" class="absolute -bottom-8 right-12 w-40 rounded-lg shadow-lg translate-x-6 translate-y-8 z-20">
+        </div>
+        <p class="italic mt-16 mb-4 text-sm md:text-base text-center">“Temukan Destinasi Impianmu!”</p>
+        <button id="start-quiz-btn" onclick="startQuiz()" class="bg-white text-sm text-[#4F834F] px-5 py-2 rounded-lg font-medium hover:bg-[#385D38] hover:text-white transition">Mulai Kuis</button>
+    </section>
+
+    <section id="quizSection" class="hidden min-h-screen flex flex-col justify-center items-center bg-[#4F834F] text-white px-6">
+            <!-- Pertanyaan 1 -->
+            <div class="question step-0 justify-center">
+                <!-- Kolom Pertanyaan -->
+                <div class="item-center mt-4 bg-white p-4 rounded-3xl w-[80%] justify-center">
+                     <div class="text-center bg-white py-10 px-2 rounded-2xl border border-7 border-dashed border-[#4F834F]">
+                       <p class="text-sm mb-2 text-[#4F834F]">Pertanyaan 1</p>
+                           <h2 class="text-xl font-semibold text-[#4F834F]">Apa jenis wisata favoritmu?</h2>
+                     </div>
+                </div>
+              
+                <!-- Pilihan jawaban -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-md mx-auto mt-20">
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Taman Hiburan 🎢</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Kehidupan Lokal 🏡</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Budaya & Sejarah 🏛️</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Alam & Petualangan 🌿</button>
+                </div>
+            </div>
+
+            <!-- Pertanyaan 2 -->
+            <div class="question step-1 hidden">
+                <!-- Kolom Pertanyaan -->
+                <div class="item-center mt-4 bg-white p-4 rounded-3xl w-[80%] justify-center">
+                     <div class="text-center bg-white py-10 px-2 rounded-2xl border border-7 border-dashed border-[#4F834F]">
+                       <p class="text-sm mb-2 text-[#4F834F]">Pertanyaan 2</p>
+                           <h2 class="text-xl font-semibold text-[#4F834F]">Apa yang ingin kamu lakukan saat bepergian?</h2>
+                     </div>
+                </div>
+              
+                <!-- Pilihan jawaban -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-md mx-auto mt-20">
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Menjelajahi alam & mendaki</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Mencicipi makanan khas</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Mengunjungi situs sejarah & budaya</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Bersantai & menikmati suasana</button>
+                </div>
+            </div>
+
+            <!-- Pertanyaan 3 -->
+            <div class="question step-2 hidden">
+                <!-- Kolom Pertanyaan -->
+                <div class="item-center mt-4 bg-white p-4 rounded-3xl w-[80%] justify-center">
+                     <div class="text-center bg-white py-10 px-2 rounded-2xl border border-7 border-dashed border-[#4F834F]">
+                       <p class="text-sm mb-2 text-[#4F834F]">Pertanyaan 3</p>
+                           <h2 class="text-xl font-semibold text-[#4F834F]">Apakah kamu lebih suka tempat yang ramai atau tenang?</h2>
+                     </div>
+                </div>
+              
+                <!-- Pilihan jawaban -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-md mx-auto mt-20">
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Tempat tersembunyi & tenang 🌿</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Destinasi populer & ramai ✨</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Kombinasi keduanya 🔁</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Bersantai & menikmati suasana</button>
+                </div>
+            </div>
+
+            <!-- Pertanyaan 4 -->
+            <div class="question step-3 hidden">
+                <!-- Kolom Pertanyaan -->
+                <div class="items-center mt-4 bg-white p-4 rounded-3xl w-[80%] justify-center">
+                     <div class="text-center bg-white py-10 px-2 rounded-2xl border border-7 border-dashed border-[#4F834F]">
+                       <p class="text-sm mb-2 text-[#4F834F]">Pertanyaan 4</p>
+                           <h2 class="text-xl font-semibold text-[#4F834F]">Seberapa jauh kamu bersedia bepergian?</h2>
+                     </div>
+                </div>
+              
+                <!-- Pilihan jawaban -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-md mx-auto mt-20">
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Dalam kota 🏙 ️</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Luar kota (Jarak menengah) 🚗</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Luar provinsi atau pulau ✈</button>
+                </div>
+            </div>
+
+            <!-- Pertanyaan 5 -->
+            <div class="question step-4 hidden">
+                <!-- Kolom Pertanyaan -->
+                <div class="item-center mt-4 bg-white p-4 rounded-3xl w-[80%] justify-center">
+                     <div class="text-center bg-white py-10 px-2 rounded-2xl border border-7 border-dashed border-[#4F834F]">
+                       <p class="text-sm mb-2 text-[#4F834F]">Pertanyaan 5</p>
+                           <h2 class="text-xl font-semibold text-[#4F834F]">Berapa kisaran anggaran perjalananmu?</h2>
+                     </div>
+                </div>
+              
+                <!-- Pilihan jawaban -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-md mx-auto mt-20">
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Hemat (Rp500rb) </button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Sedang (Rp500rb - Rp2jt)</button>
+                  <button class="answer-btn bg-white text-green-700 py-2 px-4 rounded-xl shadow">Premium (>Rp2jt)</button>
+                </div>
+            </div>
+          
+            <!-- Navigasi -->
+            <div class="flex justify-between gap-20 mt-40">
+              <button id="prevBtn" class="text-sm flex items-center"><span class="mr-2"><img src="/frontend/src/asset/icon/arrow-white-icon.png" alt="" class="w-4"></span>Kembali</button>
+              
+              <button id="nextBtn" class="text-sm flex items-center">Lanjut<span class="ml-2"><img src="/frontend/src/asset/icon/arrow-white-icon.png" alt="" class="w-4 transform rotate-180"></span></button>
+            </div>
+
     </section>
 
     <!-- Fun Fact Budaya Indonesia -->
