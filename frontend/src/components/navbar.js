@@ -1,81 +1,120 @@
+import "./login.js";
+import "./register.js";
+
 class CustomNavbar extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-        <header>
-            <nav class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-16 py-3 shadow-md bg-[#FAF5F2]">
-                <!-- Logo -->
-                <a href="#" class="flex items-center">
-                    <img src="/frontend/src/asset/img/explore-nusantara-logo.png" alt="Explore Nusantara Logo" class="w-6 md:w-12 mr-2">
-                    <span class="text-[#AC654A] text-sm md:text-xl font-semibold">Explore Nusantara</span>
-                </a>
-            
-                <!-- Menu Hamburger (Mobile) -->
-                <button id="menu-toggle" class="md:hidden">
-                    <img src="/frontend/src/asset/icon/menu-hamburger.png" alt="menu-hamburger" class="w-5">
+  connectedCallback() {
+    this.innerHTML = `
+      <nav class="relative fixed top-0 left-0 w-full z-50 bg-[#FAF5F2] shadow-md px-4 sm:px-6 md:px-10 lg:px-16 py-3">
+        <div class="flex items-center justify-between w-full max-w-7xl mx-auto">
+          <a href="index.html" class="flex items-center gap-2">
+            <img src="/public/img/explore-nusantara-logo.png" alt="Logo" class="w-10" />
+            <span class="text-[#AC654A] text-xl font-semibold">Explore Nusantara</span>
+          </a>
+
+          <button id="menu-toggle" class="md:hidden focus:outline-none text-[#AC654A] text-2xl">
+            <i class="bx bx-menu"></i>
+          </button>
+
+          <ul id="nav-menu" class="hidden md:flex gap-6 items-center text-sm font-medium absolute md:static top-14 left-0 w-full md:w-auto bg-[#FAF5F2] md:bg-transparent md:shadow-none shadow-md px-4 py-4 md:p-0 flex-col md:flex-row z-40 transition-all duration-300 ease-in-out">
+            <li><a href="index.html" class="nav-link block py-2 md:py-0 font-semibold underline decoration-[#4F834F] underline-offset-4 hover:relative group">Beranda
+              <span class="absolute left-0 bottom-0 w-full h-0.5 bg-green-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+            </a></li>
+            <li><a href="destinasi.html" class="nav-link block py-2 md:py-0 hover:relative group">Destinasi
+              <span class="absolute left-0 bottom-0 w-full h-0.5 bg-green-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+            </a></li>
+            <li><a href="budaya.html" class="nav-link block py-2 md:py-0 hover:relative group">Budaya
+              <span class="absolute left-0 bottom-0 w-full h-0.5 bg-green-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+            </a></li>
+            <li class="md:hidden flex flex-row flex-wrap gap-4 mt-2 items-center justify-between">
+              <div class="relative flex-1 min-w-[150px]">
+                <input type="text" placeholder="Cari..." class="w-full px-4 py-2 text-sm rounded-full border focus:ring-2 focus:ring-[#4F834F]" />
+                <button class="absolute right-3 top-1/2 -translate-y-1/2">
+                  <img src="/public/icon/search-icon.png" alt="Cari" class="w-4" />
                 </button>
-
-                <!-- Navigasi di Tengah -->
-                <ul class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-16">
-                    <li><a href="/frontend/src/pages/main-landing-page.html" class="text-black hover:text-[#4F834F]">Beranda</a></li>
-                    <li><a href="/frontend/src/pages/destinasi-landing-page.html" class="text-black hover:text-[#4F834F]">Destinasi</a></li>
-                    <li><a href="/frontend/src/pages/budaya-landing-page.html" class="text-black hover:text-[#4F834F]">Budaya</a></li>
+              </div>
+              <div class="relative min-w-[100px]">
+                <button id="mobile-language-toggle" class="flex items-center justify-between w-full px-4 py-2 border rounded-md">
+                  <i class="bx bx-globe mr-2"></i><span>ID</span><i class="bx bx-chevron-down ml-auto"></i>
+                </button>
+                <ul id="mobile-language-dropdown" class="hidden absolute z-50 mt-1 bg-white border rounded shadow-md w-full">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 text-sm" data-lang="id">ID</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 text-sm" data-lang="en">EN</a></li>
                 </ul>
-            
-                <!-- Search, Bahasa, dan Tombol Masuk -->
-                <div class="hidden md:flex items-center space-x-4">
-                    <!-- Search Bar -->
-                    <div class="relative hidden md:block">
-                        <input type="text" placeholder="Cari..." class="px-4 py-2 rounded-full border border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                        <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500">
-                            <img src="/frontend/src/asset/icon/search-icon.png" alt="search-icon" class="h-6">
-                        </button>
-                    </div>
-            
-                    <!-- Opsi Bahasa -->
-                    <select class="bg-transparent text-[#222222] font-normal focus:outline-none">
-                        <option value="id">ID</option>
-                        <option value="en">EN</option>
-                    </select>
-            
-                    <!-- Tombol Masuk -->
-                    <a href="/frontend/src/pages/login-page.html" class="block text-center bg-[#4F834F] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#304b30]">
-                        Masuk
-                    </a>
-                </div>
+              </div>
+              <button id="mobile-login-btn" class="bg-[#4F834F] text-white px-4 py-2 rounded-lg text-sm font-semibold transition hover:bg-[#385D38] min-w-[80px]">
+                Masuk
+              </button>
+            </li>
+          </ul>
 
-                <!-- Menu Mobile -->
-                <div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-[#FAF5F2] shadow-md md:hidden">
-                    <ul class="flex flex-col items-center space-y-4 py-4">
-                        <li><a href="/frontend/src/pages/main-landing-page.html" class="text-black hover:text-[#4F834F]">Beranda</a></li>
-                        <li><a href="/frontend/src/pages/destinasi-landing-page.html" class="text-black hover:text-[#4F834F]">Destinasi</a></li>
-                        <li><a href="/frontend/src/pages/budaya-landing-page.html" class="text-black hover:text-[#4F834F]">Budaya</a></li>
-                        <li>
-                            <!-- Search Bar (Mobile) -->
-                            <div class="relative">
-                                <input type="text" placeholder="Cari..." class="px-4 py-2 w-64 rounded-full border border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                                <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500">
-                                    <img src="/frontend/src/asset/icon/search-icon.png" alt="search-icon" class="h-6">
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <!-- Opsi Bahasa (Mobile) -->
-                            <select class="bg-transparent text-[#222222] font-normal focus:outline-none">
-                                <option value="id">ID</option>
-                                <option value="en">EN</option>
-                            </select>
-                        </li>
-                        <li>
-                            <!-- Tombol Masuk (Mobile) -->
-                            <a href="/frontend/src/pages/login-page.html" class="block text-center bg-[#4F834F] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#304b30]">
-                                Masuk
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        `;
-    }
+          <div class="hidden flex md:flex items-center gap-4">
+            <div class="relative w-28 md:w-48 lg:w-64">
+              <input type="text" placeholder="Cari..." class="w-full px-4 py-2 text-sm rounded-full border focus:ring-2 focus:ring-[#4F834F]" />
+              <button class="absolute right-3 top-1/2 -translate-y-1/2">
+                <img src="/public/icon/search-icon.png" alt="Cari" class="w-4" />
+              </button>
+            </div>
+
+            <div class="relative group">
+              <button id="language-toggle" class="flex items-center gap-1 text-sm font-medium hover:text-[#4F834F]">
+                <i class="bx bx-globe"></i><span id="language-text">ID</span><i class="bx bx-chevron-down text-xs"></i>
+              </button>
+              <ul id="language-dropdown" class="absolute right-0 mt-2 bg-white border rounded shadow-md hidden group-hover:block transition ease-out duration-300">
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 text-sm" data-lang="id">ID</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 text-sm" data-lang="en">EN</a></li>
+              </ul>
+            </div>
+
+            <button id="desktop-login-btn" class="bg-[#4F834F] text-white px-4 py-2 rounded-lg hover:bg-[#304b30] text-sm font-semibold transition-all duration-200">Masuk</button>
+          </div>
+        </div>
+      </nav>
+      <div id="menu-overlay" class="hidden fixed inset-0 bg-black bg-opacity-40 z-30"></div>
+      <login-modal></login-modal>
+      <register-modal></register-modal>
+      `;
+
+    const toggleDropdown = (toggle, dropdown) => {
+      toggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdown.classList.toggle("hidden");
+      });
+    };
+
+    const menuToggle = this.querySelector("#menu-toggle");
+    const navMenu = this.querySelector("#nav-menu");
+    const overlay = this.querySelector("#menu-overlay");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("hidden");
+      overlay.classList.toggle("hidden");
+    });
+
+    overlay.addEventListener("click", () => {
+      navMenu.classList.add("hidden");
+      overlay.classList.add("hidden");
+    });
+
+    toggleDropdown(
+      this.querySelector("#language-toggle"),
+      this.querySelector("#language-dropdown")
+    );
+    toggleDropdown(
+      this.querySelector("#mobile-language-toggle"),
+      this.querySelector("#mobile-language-dropdown")
+    );
+
+    const loginModal = document.getElementById("login-modal");
+    [
+      this.querySelector("#desktop-login-btn"),
+      this.querySelector("#mobile-login-btn"),
+    ].forEach((btn) => {
+      if (btn)
+        btn.addEventListener("click", () => {
+          loginModal.classList.remove("hidden");
+          loginModal.classList.add("flex");
+        });
+    });
+  }
 }
-customElements.define('custom-navbar', CustomNavbar);
+customElements.define("navbar-section", CustomNavbar);

@@ -1,12 +1,12 @@
 class CustomFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <footer class="bg-[#4F834F] w-full">
             <!-- Footer Content -->
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 items-center px-6 py-10 text-center md:text-left gap-6">
                 <!-- Logo -->
                 <div class="flex justify-center md:justify-start items-center">
-                    <img src="/frontend/src/asset/img/logo-explore-nusantara-putih.png" alt="Logo Explore Nusantara" class="w-12 mr-2">
+                    <img src="/public/img/logo-explore-nusantara-putih.png" alt="Logo Explore Nusantara" class="w-12 mr-2">
                     <span class="text-white text-xl font-semibold">Explore Nusantara</span>
                 </div>
 
@@ -19,9 +19,9 @@ class CustomFooter extends HTMLElement {
 
                 <!-- Social Media -->
                 <ul class="flex justify-center md:justify-end space-x-4 mt-3 md:mt-0">
-                    <li><a href="#"><img src="/frontend/src/asset/icon/instagram-icon.png" alt="Instagram" class="h-6"></a></li>
-                    <li><a href="#"><img src="/frontend/src/asset/icon/facebook-icon.png" alt="Facebook" class="h-6"></a></li>
-                    <li><a href="#"><img src="/frontend/src/asset/icon/twitter-icon.png" alt="Twitter" class="h-6"></a></li>
+                    <li><a href="#"><img src="/public/icon/instagram-icon.png" alt="Instagram" class="h-6"></a></li>
+                    <li><a href="#"><img src="/public/icon/facebook-icon.png" alt="Facebook" class="h-6"></a></li>
+                    <li><a href="#"><img src="/public/icon/twitter-icon.png" alt="Twitter" class="h-6"></a></li>
                 </ul>
             </div>
 
@@ -31,6 +31,6 @@ class CustomFooter extends HTMLElement {
             </div>
         </footer>
         `;
-    }
+  }
 }
-customElements.define('custom-footer', CustomFooter);
+customElements.define("footer-section", CustomFooter);

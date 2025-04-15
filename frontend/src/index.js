@@ -1,4 +1,9 @@
 import "./components/navbar.js";
+import "./components/hero-section.js";
+import "./components/destination-section.js";
+import "./components/kuis.js";
+import "./components/fun-fact.js";
+import "./components/informasi-budaya.js";
 import "./components/footer.js";
 import "./components/destination-card.js";
 
