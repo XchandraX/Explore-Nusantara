@@ -11,7 +11,7 @@ Aplikasi ini membantu wisatawan menemukan destinasi terbaik berdasarkan data & p
 ## 🎯 Fitur Utama
 ✅ Rekomendasi tempat wisata berdasarkan Machine Learning  
 ✅ Sistem pencarian & filter berdasarkan kategori wisata  
-✅ Review & rating dari pengguna  
+✅ Kuis interaktif tentang preferensi pengguna  
 ✅ UI/UX modern & responsif  
 ✅ API RESTful untuk backend  
 
