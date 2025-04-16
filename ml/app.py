@@ -1,6 +1,7 @@
 import pandas as pd
 from flask import Flask, request, jsonify
 import pickle
+import random
 
 with open('recommendation_model.pkl', 'rb') as f:
     similarity_matrix, vectorizer, le_category, le_city, scaler, df = pickle.load(f)
@@ -53,6 +54,38 @@ def get_place(place_index):
         return jsonify({"place": place_data})
     except Exception as e:
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
+    
+@app.route('/get-random-place', methods=['GET'])
+def get_random_place():
+    try:
+        total_places = len(df)
+        if total_places == 0:
+            return jsonify({"error": "No places available."}), 404
+
+        random_indices = random.sample(range(total_places), min(6, total_places))
+        random_places = df.iloc[random_indices].copy()
+
+        random_places["all_images"] = random_places.apply(lambda row: [row["place_img"]] +
+                                                          [img for img in [row.get("gallery_photo_img1"),
+                                                                           row.get("gallery_photo_img2"),
+                                                                           row.get("gallery_photo_img3")]
+                                                           if isinstance(img, str) and img.strip()], axis=1)
+
+        results = []
+        for idx, row in random_places.iterrows():
+            place = row.to_dict()
+            place["place_index"] = idx  
+            place["place_img"] = place["all_images"] 
+            del place["all_images"]
+            for k in ["gallery_photo_img1", "gallery_photo_img2", "gallery_photo_img3"]:
+                place.pop(k, None)
+            results.append(place)
+
+        return jsonify({"random_places": results})
+
+    except Exception as e:
+        return jsonify({"error": f"Internal server error: {str(e)}"}), 500
+        
 
 if __name__ == '__main__':
     app.run(debug=True)
