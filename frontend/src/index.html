@@ -23,25 +23,36 @@
       <div id="recommendations-container"></div>
 
       <script>
-        fetch("http://localhost:5000/get-recommendation?place_index=0&top_n=3")
-          .then((response) => response.json())
-          .then((data) => {
-            const container = document.getElementById(
-              "recommendations-container"
-            );
-            data.recommendations.forEach((place) => {
-              const card = document.createElement("destination-card");
-              card.data = place; // pasang datanya
-              container.appendChild(card);
-            });
-          })
-          .catch((err) => console.error("Fetch error:", err));
+          fetch('http://localhost:5000/get-recommendation?place_index=0&top_n=3')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('recommendation-list');
+
+        if (data.recommendations) {
+          data.recommendations.forEach(place => {
+            // Ambil gambar dari all_images (list), ambil yang pertama
+            place.img = place.all_images && place.all_images.length > 0 ? place.all_images[0] : '';
+
+            const card = document.createElement('destination-card');
+            card.data = place;
+            container.appendChild(card);
+          });
+        } else {
+          container.innerHTML = '<p>Gagal mengambil rekomendasi.</p>';
+        }
+      })
+      .catch(err => {
+        console.error('Fetch error:', err);
+        document.getElementById('recommendation-list').innerHTML = '<p>Error loading recommendations.</p>';
+      });
       </script>
+      
       <destination-card></destination-card>
       <kuis-section></kuis-section>
       <fun-fact></fun-fact>
       <informasi-budaya></informasi-budaya>
     </main>
     <footer-section></footer-section>
+    <script src="/frontend/src/components/destination-card.js"></script>
   </body>
 </html>

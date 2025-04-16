@@ -156,7 +156,7 @@ async function fetchData() {
   }
 }
 
-// Function to generate star icons based on rating
+
 function generateStars(rating) {
   let stars = "";
   for (let i = 0; i < 5; i++) {
