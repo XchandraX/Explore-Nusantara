@@ -1,20 +1,16 @@
-const { merge } = require('webpack-merge');
-const path = require('path');
-const common = require('./webpack.common');
+const path = require("path");
+const { merge } = require("webpack-merge");
+const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
-    mode: 'development',
-    devServer: {
-        static: {
-            directory: path.join(__dirname, 'dist'),
-        },
-        watchFiles: ['index.html', 'src/**/*'],
-        open: true,
-        client: {
-            overlay: {
-                errors: true,
-                warnings: false,
-            },
-        },
-    },
+  mode: "development",
+  devServer: {
+    contentBase: path.resolve(__dirname, "dist"),
+    compress: true,
+    port: 9000,
+    host: "127.0.0.1",
+    open: true,
+    hot: true,
+    historyApiFallback: true,
+  },
 });
